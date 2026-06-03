@@ -133,7 +133,7 @@ while True:
         upper=int(input("enter upper number: "))
         System_number=random.randint(lower, upper)
         while True:
-            user_number = int(input("Choose a number 1 to 50: "))
+            user_number = int(input(f"Choose a number {lower} to {upper}: "))
             if upper<user_number<lower:
                 print(f"please choose a number between {lower} and {upper}")
             else:
