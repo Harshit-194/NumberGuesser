@@ -40,7 +40,7 @@ while True: #executes unless exited
 
         # level 2: 50 numbers
         elif choice2==2: #case if level2 is chosen
-            System_number = random.randint(1, 50) )#to generate random number for getting system chosen number (the number to be guessed
+            System_number = random.randint(1, 50) #to generate random number for getting system chosen number (the number to be guessed
             while True:
                 user_number = int(input("Choose a number 1 to 50: "))# to take user input(the user's guessed number)
                 if 1>user_number> 50: #to make sure user choose a number in the desired range
