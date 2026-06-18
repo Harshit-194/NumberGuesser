@@ -24,16 +24,16 @@ while True:
                     print("please choose a number between 1 and 20")
                 else:
                     if count==lose_point:
-                        print("Your tries exceeded 10, you lost!!!!!!!!!!")
+                        print(f"Your tries exceeded {lose_point} , you lost!!!!!!!!!!")
                         break
                     else:
                         if user_number == System_number:
-                            print(f"You correctly guessed the number {user_number} with {10-count} tries left!!")
+                            print(f"You correctly guessed the number {user_number} with {lose_point-count} tries left!!")
                             break
                         elif user_number<System_number:
-                            print(f"Incorrect!!! {10-count} tries left !!!!!! Try a higher number!!!!")
+                            print(f"Incorrect!!! {lose_point-count} tries left !!!!!! Try a higher number!!!!")
                         elif user_number>System_number:
-                            print(f"Incorrect!!! {10-count} tries left !!!!!!S Try a lower number!!!!")
+                            print(f"Incorrect!!! {lose_point-count} tries left !!!!!!S Try a lower number!!!!")
                     count = count + 1
 
 
@@ -47,16 +47,16 @@ while True:
                     print("please choose a number between 1 and 50")
                 else:
                     if count == lose_point:
-                        print("Your tries exceeded 10, you lost!!!!!!!!!!")
+                        print(f"Your tries exceeded {lose_point}, you lost!!!!!!!!!!")
                         break
                     else:
                         if user_number == System_number:
-                            print(f"You correctly guessed the number {user_number} with {10-count} tries left!!")
+                            print(f"You correctly guessed the number {user_number} with {lose_point-count} tries left!!")
                             break
                         elif user_number < System_number:
-                            print(f"Incorrect!!! {10 - count} tries left !!!!!! Try a higher number!!!!")
+                            print(f"Incorrect!!! {lose_point - count} tries left !!!!!! Try a higher number!!!!")
                         elif user_number > System_number:
-                            print(f"Incorrect!!! {10 - count} tries left !!!!!!S Try a lower number!!!!")
+                            print(f"Incorrect!!! {lose_point - count} tries left !!!!!!S Try a lower number!!!!")
                     count = count + 1
 
 
@@ -69,16 +69,16 @@ while True:
                     print("please choose a number between 1 and 100")
                 else:
                     if count == lose_point:
-                        print("Your tries exceeded 10, you lost!!!!!!!!!!")
+                        print(f"Your tries exceeded {lose_point}, you lost!!!!!!!!!!")
                         break
                     else:
                         if user_number == System_number:
-                            print(f"You correctly guessed the number {user_number} with {10-count} tries left!!")
+                            print(f"You correctly guessed the number {user_number} with {lose_point-count} tries left!!")
                             break
                         elif user_number < System_number:
-                            print(f"Incorrect!!! {10 - count} tries left !!!!!! Try a higher number!!!!")
+                            print(f"Incorrect!!! {lose_point - count} tries left !!!!!! Try a higher number!!!!")
                         elif user_number > System_number:
-                            print(f"Incorrect!!! {10 - count} tries left !!!!!!S Try a lower number!!!!")
+                            print(f"Incorrect!!! {lose_point- count} tries left !!!!!!S Try a lower number!!!!")
                     count = count + 1
 
 
@@ -91,16 +91,16 @@ while True:
                     print("please choose a number between 1 and 500")
                 else:
                     if count == lose_point:
-                        print("Your tries exceeded 10, you lost!!!!!!!!!!")
+                        print(f"Your tries exceeded {lose_point}, you lost!!!!!!!!!!")
                         break
                     else:
                         if user_number == System_number:
-                            print(f"You correctly guessed the number {user_number} with {10-count} tries left!!")
+                            print(f"You correctly guessed the number {user_number} with {lose_point-count} tries left!!")
                             break
                         elif user_number < System_number:
-                            print(f"Incorrect!!! {10 - count} tries left !!!!!! Try a higher number!!!!")
+                            print(f"Incorrect!!! {lose_point - count} tries left !!!!!! Try a higher number!!!!")
                         elif user_number > System_number:
-                            print(f"Incorrect!!! {10 - count} tries left !!!!!!S Try a lower number!!!!")
+                            print(f"Incorrect!!! {lose_point - count} tries left !!!!!!S Try a lower number!!!!")
                     count = count + 1
 
 
@@ -113,16 +113,16 @@ while True:
                     print("please choose a number between 1 and 1000")
                 else:
                     if count == lose_point:
-                        print("Your tries exceeded 10, you lost!!!!!!!!!!")
+                        print(f"Your tries exceeded {lose_point}, you lost!!!!!!!!!!")
                         break
                     else:
                         if user_number == System_number:
-                            print(f"You correctly guessed the number {user_number} with {10-count} tries left!!")
+                            print(f"You correctly guessed the number {user_number} with {lose_point-count} tries left!!")
                             break
                         elif user_number < System_number:
-                            print(f"Incorrect!!! {10 - count} tries left !!!!!! Try a higher number!!!!")
+                            print(f"Incorrect!!! {lose_point - count} tries left !!!!!! Try a higher number!!!!")
                         elif user_number > System_number:
-                            print(f"Incorrect!!! {10 - count} tries left !!!!!!S Try a lower number!!!!")
+                            print(f"Incorrect!!! {lose_point - count} tries left !!!!!!S Try a lower number!!!!")
                     count = count + 1
 
 
@@ -134,7 +134,7 @@ while True:
         System_number=random.randint(lower, upper)
         while True:
             user_number = int(input(f"Choose a number {lower} to {upper}: "))
-            if upper<user_number<lower:
+            if upper < user_number < lower:
                 print(f"please choose a number between {lower} and {upper}")
             else:
                 if count == lose_point:
